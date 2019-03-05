@@ -1,0 +1,131 @@
+@import url("normalize.css");
+@import url("constants.scss");
+@import url("micons/micons.css");
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:300,400,600,700');
+@import url("font-awesome/css/font-awesome.min.css");
+
+html, body {
+  height: 100vh;
+  background-color: $white;
+}
+
+main {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .intro {
+    background-color: $black;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .about {
+    background-color: $white;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .experience {
+    background-color: $grey;
+    height: 100vh;
+    width: 100%;
+  }
+
+  footer {
+    background-color: $black;
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+.intro-flex-container {
+  // position: absolute;
+  // height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  width: 90%;
+  // border: 1px solid $white;
+}
+
+.intro-flex-item {
+
+  text-align: center;
+  text-rendering: optimizeLegibility;
+
+  h5, h6 {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 0.3;
+    margin: 0px;
+    color: $white;
+  }
+
+  h5 {
+    font-family: "poppins", sans-serif;
+    font-weight: light;
+    font-size: 1.25rem;
+    letter-spacing: .2rem;
+    color: $yellow;
+  }
+
+  h6 {
+    font-family: "lora", serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    color: $white;
+  }
+}
+
+.social-flex-container {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .social-flex-item {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: $black;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400px;
+    line-height: 28px;
+  
+    a {
+      color: $white;
+    }
+  
+    a:hover {
+      color: $yellow;
+    }
+  
+    a:visited {
+      color: $grey
+    }
+  }
+}

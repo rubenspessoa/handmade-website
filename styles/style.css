@@ -1,0 +1,153 @@
+@import url("normalize.css");
+@import url("micons/micons.css");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:300,400,600,700");
+@import url("font-awesome/css/font-awesome.min.css");
+html, body {
+  height: 100vh;
+  background-color: #FFF;
+}
+
+main {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .intro {
+  background-color: #151515;
+  height: 100vh;
+  width: 100%;
+}
+
+main .about {
+  background-color: #FFF;
+  height: 100vh;
+  width: 100%;
+}
+
+main .experience {
+  background-color: #EBEBEB;
+  height: 100vh;
+  width: 100%;
+}
+
+main footer {
+  background-color: #151515;
+  height: 50vh;
+  width: 100%;
+}
+
+.intro-flex-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  width: 90%;
+}
+
+.intro-flex-item {
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+
+.intro-flex-item h5, .intro-flex-item h6 {
+  text-transform: uppercase;
+}
+
+.intro-flex-item h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: 4.5rem;
+  line-height: 0.3;
+  margin: 0px;
+  color: #FFF;
+}
+
+.intro-flex-item h5 {
+  font-family: "poppins", sans-serif;
+  font-weight: light;
+  font-size: 1.25rem;
+  letter-spacing: .2rem;
+  color: #FFF3B0;
+}
+
+.intro-flex-item h6 {
+  font-family: "lora", serif;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+  color: #FFF;
+}
+
+.social-flex-container {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-flex-container .social-flex-item {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #151515;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400px;
+  line-height: 28px;
+}
+
+.social-flex-container .social-flex-item a {
+  color: #FFF;
+}
+
+.social-flex-container .social-flex-item a:hover {
+  color: #FFF3B0;
+}
+
+.social-flex-container .social-flex-item a:visited {
+  color: #EBEBEB;
+}
+/*# sourceMappingURL=style.css.map */
