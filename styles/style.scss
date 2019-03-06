@@ -1,5 +1,7 @@
+// Partials
 @import "_constants.scss";
 
+// Externals
 @import url("normalize.css");
 @import url("micons/micons.css");
 @import url('https://fonts.googleapis.com/css?family=Lora:200,400,400i,700,700i|Poppins:300,400,600,700');
@@ -89,6 +91,12 @@ main {
     letter-spacing: 0.2rem;
     color: $white;
   }
+
+  .buttons-container {
+    .button {
+      border: 2.5px solid $white;
+    }
+  }
 }
 
 .social-flex-container {
@@ -136,7 +144,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0px 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 50px;
 }
 
 .about-flex-item {
@@ -200,6 +210,9 @@ main {
   }
 
   ol {
+    font-family: "lora", serif;
+    padding: 0px 30px;
+    margin: 0px;
     text-align: start;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -213,4 +226,55 @@ main {
 
 .img-circle {
   border-radius: 50%;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.5px solid $black;
+  height: 54px;
+  width: 250px;
+  font-weight: bolder;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0px 10px;
+}
+
+.btn-black {
+  background-color: $black;
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  a:hover {
+    color: $yellow;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+
+  a:hover {
+    color: $yellow;
+  }
 }
