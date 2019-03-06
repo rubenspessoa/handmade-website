@@ -33,7 +33,7 @@ main .intro {
 
 main .about {
   background-color: #FFF;
-  height: 200vh;
+  height: auto;
   width: 100%;
 }
 
@@ -151,6 +151,10 @@ main footer {
 }
 
 .about-flex-container {
+  width: auto;
+  height: auto;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,38 +165,91 @@ main footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0px 200px;
 }
 
-.about-flex-container h5 {
+.about-flex-item {
+  text-align: center;
+}
+
+.about-flex-item h5, .about-flex-item p {
   font-family: "lora", serif;
   font-size: 17px;
   font-weight: 200;
-  letter-spacing: .05rem;
-  text-align: center;
   text-rendering: optimizeLegibility;
   color: grey;
-  padding: 20px;
-  width: 80%;
 }
 
-.about-flex-container h4 {
+.about-flex-item h4 {
   text-transform: uppercase;
   color: #CF5C36;
   margin-top: 100px;
   margin-bottom: 0px;
 }
 
-.about-flex-container h2 {
+.about-flex-item h3 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #151515;
+}
+
+.about-flex-item h2 {
   font-size: 40px;
   font-weight: normal;
 }
 
-.about-flex-container .about-image {
+.about-flex-item .about-image {
   width: 500px;
   height: auto;
+}
+
+.profile-skills-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px 100px;
+}
+
+.profile-skills-flex-item {
+  padding: 0px 30px;
+}
+
+.profile-skills-flex-item p {
+  text-align: start;
+}
+
+.profile-skills-flex-item h5 {
+  font-family: "poppins", sans-serif;
+  text-align: start;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  color: #151515;
+  margin: 0;
+}
+
+.profile-skills-flex-item ol {
+  text-align: start;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 20px;
+}
+
+.profile-skills-flex-item ol li {
+  padding: 20px;
 }
 
 .img-circle {

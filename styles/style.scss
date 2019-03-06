@@ -26,7 +26,7 @@ main {
 
   .about {
     background-color: $white;
-    height: 200vh;
+    height: auto;
     width: 100%;
   }
 
@@ -128,22 +128,28 @@ main {
 }
 
 .about-flex-container {
+  width: auto;
+  height: auto;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  padding: 0px 200px;
+}
 
-  h5 {
+.about-flex-item {
+  text-align: center;
+
+  h5, p {
     font-family: "lora", serif;
     font-size: 17px;
     font-weight: 200;
-    letter-spacing: .05rem;
-    text-align: center;
     text-rendering: optimizeLegibility;
     color: grey;
-    padding: 20px;
-    width: 80%;
   }
+
   h4 {
     text-transform: uppercase;
     color: $orange;
@@ -151,15 +157,57 @@ main {
     margin-bottom: 0px;
   }
 
+  h3 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: $black;
+  }
+
   h2 {
     font-size: 40px;
     font-weight: normal;
-    // padding: 0px;
   }
 
   .about-image {
     width: 500px;
     height: auto;
+  }
+}
+
+.profile-skills-flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 50px 100px;
+}
+
+.profile-skills-flex-item {
+  padding: 0px 30px;
+
+  p {
+    text-align: start;
+  }
+
+  h5 {
+    font-family: "poppins", sans-serif;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    color: $black;
+    margin: 0;
+  }
+
+  ol {
+    text-align: start;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 20px;
+
+    li {
+      padding: 20px;
+    }
   }
 }
 
