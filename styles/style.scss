@@ -1,12 +1,14 @@
+@import "_constants.scss";
+
 @import url("normalize.css");
-@import url("constants.scss");
 @import url("micons/micons.css");
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lora:200,400,400i,700,700i|Poppins:300,400,600,700');
 @import url("font-awesome/css/font-awesome.min.css");
 
 html, body {
   height: 100vh;
   background-color: $white;
+  font-family: "poppins", sans-serif;
 }
 
 main {
@@ -42,8 +44,6 @@ main {
 }
 
 .intro-flex-container {
-  // position: absolute;
-  // height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -53,9 +53,8 @@ main {
   margin: 0;
 }
 
-.row {
+.intro-row {
   width: 90%;
-  // border: 1px solid $white;
 }
 
 .intro-flex-item {
@@ -68,7 +67,6 @@ main {
   }
 
   h1 {
-    font-family: "poppins", sans-serif;
     font-weight: 600;
     font-size: 4.5rem;
     line-height: 0.3;
@@ -77,8 +75,7 @@ main {
   }
 
   h5 {
-    font-family: "poppins", sans-serif;
-    font-weight: light;
+    font-weight: bold;
     font-size: 1.25rem;
     letter-spacing: .2rem;
     color: $yellow;
@@ -128,4 +125,44 @@ main {
       color: $grey
     }
   }
+}
+
+.about-flex-container {
+  display: flex;
+  // width: 60%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h5 {
+    font-family: "lora", serif;
+    font-size: 17px;
+    font-weight: 200;
+    letter-spacing: .05rem;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    color: grey;
+    padding: 20px;
+    width: 80%;
+  }
+  h4 {
+    text-transform: uppercase;
+    color: $orange;
+    line-height: 28px;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .about-image {
+    width: 500px;
+    height: auto;
+  }
+}
+
+.img-circle {
+  border-radius: 50%;
 }
