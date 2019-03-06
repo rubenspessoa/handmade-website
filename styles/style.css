@@ -33,7 +33,7 @@ main .intro {
 
 main .about {
   background-color: #FFF;
-  height: 100vh;
+  height: 200vh;
   width: 100%;
 }
 
@@ -161,9 +161,9 @@ main footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .about-flex-container h5 {
@@ -181,8 +181,8 @@ main footer {
 .about-flex-container h4 {
   text-transform: uppercase;
   color: #CF5C36;
-  line-height: 28px;
-  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 0px;
 }
 
 .about-flex-container h2 {

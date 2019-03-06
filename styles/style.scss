@@ -26,7 +26,7 @@ main {
 
   .about {
     background-color: $white;
-    height: 100vh;
+    height: 200vh;
     width: 100%;
   }
 
@@ -129,10 +129,9 @@ main {
 
 .about-flex-container {
   display: flex;
-  // width: 60%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   h5 {
     font-family: "lora", serif;
@@ -148,13 +147,14 @@ main {
   h4 {
     text-transform: uppercase;
     color: $orange;
-    line-height: 28px;
-    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 0px;
   }
 
   h2 {
     font-size: 40px;
     font-weight: normal;
+    // padding: 0px;
   }
 
   .about-image {
