@@ -15,10 +15,7 @@ html, body {
 
 main {
   height: auto;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
 
   .intro {
     background-color: $black;
@@ -45,20 +42,6 @@ main {
   }
 }
 
-.intro-flex-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-
-.intro-row {
-  width: 90%;
-}
-
 .intro-flex-item {
 
   text-align: center;
@@ -66,6 +49,7 @@ main {
 
   h5, h6 {
     text-transform: uppercase;
+    margin: 1.5rem;
   }
 
   h1 {
@@ -106,8 +90,6 @@ main {
   left: 0;
   height: 100px;
   width: 100%;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 
@@ -120,15 +102,15 @@ main {
     font-size: 23px;
     font-weight: 400px;
     line-height: 28px;
-  
+
     a {
       color: $white;
     }
-  
+
     a:hover {
       color: $yellow;
     }
-  
+
     a:visited {
       color: $grey
     }

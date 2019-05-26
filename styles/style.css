@@ -10,19 +10,9 @@ html, body {
 
 main {
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 main .intro {
@@ -49,29 +39,6 @@ main footer {
   width: 100%;
 }
 
-.intro-flex-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-
-.intro-row {
-  width: 90%;
-}
-
 .intro-flex-item {
   text-align: center;
   text-rendering: optimizeLegibility;
@@ -79,6 +46,7 @@ main footer {
 
 .intro-flex-item h5, .intro-flex-item h6 {
   text-transform: uppercase;
+  margin: 1.5rem;
 }
 
 .intro-flex-item h1 {
@@ -116,13 +84,6 @@ main footer {
   left: 0;
   height: 100px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
