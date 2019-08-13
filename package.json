@@ -1,0 +1,22 @@
+{
+  "name": "handcrafted-website",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenspessoa/handcrafted-website.git"
+  },
+  "author": "Rubens Pessoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubenspessoa/handcrafted-website/issues"
+  },
+  "homepage": "https://github.com/rubenspessoa/handcrafted-website#readme",
+  "dependencies": {
+    "bootstrap": "4.3.1"
+  }
+}
