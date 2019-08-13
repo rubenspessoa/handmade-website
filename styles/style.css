@@ -10,23 +10,19 @@ html, body {
   width: 100%;
 }
 
-#container {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  min-width: 480px;
-  padding: 20px;
-  width: 100%;
-}
-
 main .intro {
   background-color: #151515;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .about {
@@ -44,57 +40,154 @@ main footer {
   height: 50vh;
 }
 
-.intro {
+.intro-heading {
   text-align: center;
   text-rendering: optimizeLegibility;
 }
 
-.intro h5, .intro h6 {
+.intro-heading h5, .intro-heading h6 {
   text-transform: uppercase;
   margin: 1.5rem;
 }
 
-.intro h1 {
+.intro-heading h1 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.8rem;
   line-height: 0.8;
   margin: 0px;
   color: #FFF;
 }
 
-.intro h5 {
+.intro-heading h5 {
   font-weight: bold;
   font-size: 0.9rem;
   letter-spacing: .2rem;
   color: #FFF3B0;
 }
 
-.intro h6 {
+.intro-heading h6 {
   font-family: "lora", serif;
   font-weight: lighter;
-  font-size: 0.5rem;
+  font-size: 0.65rem;
   line-height: 1.0rem;
   letter-spacing: 0.2rem;
   color: #FFF;
 }
 
-.intro .buttons-container .button {
-  border: 2.5px solid #FFF;
+.intro-heading .buttons-container .button {
+  border: 2.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.intro-social {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.intro-social .intro-social-item {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #151515;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400px;
+  line-height: 28px;
+}
+
+.intro-social .intro-social-item a {
+  color: #FFF;
+}
+
+.intro-social .intro-social-item a:hover {
+  color: #FFF3B0;
+}
+
+.intro-social .intro-social-item a:visited {
+  color: #EBEBEB;
+}
+
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3.375rem;
+  width: 15.625rem;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.btn-black {
+  background-color: #151515;
+}
+
+.btn-black a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.btn-black a:hover {
+  color: #FFF3B0;
+}
+
+.btn-transparent {
+  background-color: transparent;
+}
+
+.btn-transparent a {
+  text-decoration: none;
+  color: #151515;
+}
+
+.btn-transparent a:hover {
+  color: #FFF3B0;
 }
 
 @media only screen and (min-width: 400px) {
   .intro h1 {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
   .intro h5 {
     font-size: 1rem;
   }
   .intro h6 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 576px) {
   .intro h1 {
     font-size: 3.2rem;
     line-height: 0.25;
@@ -103,7 +196,7 @@ main footer {
     font-size: 1.125rem;
   }
   .intro h6 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -117,7 +210,7 @@ main footer {
     letter-spacing: .2rem;
   }
   .intro h6 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 2.5rem;
     letter-spacing: 0.2rem;
   }

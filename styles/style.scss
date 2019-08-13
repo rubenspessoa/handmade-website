@@ -15,20 +15,13 @@ html, body {
   width: 100%;
 }
 
-#container {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  min-width: 480px;
-  padding: 20px;
-  width: 100%;
-}
-
 main {
   .intro {
     background-color: $black;
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .about {
@@ -47,7 +40,7 @@ main {
   }
 }
 
-.intro {
+.intro-heading {
   text-align: center;
   text-rendering: optimizeLegibility;
 
@@ -58,7 +51,7 @@ main {
 
   h1 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.8rem;
     line-height: 0.8;
     margin: 0px;
     color: $white;
@@ -74,7 +67,7 @@ main {
   h6 {
     font-family: "lora", serif;
     font-weight: lighter;
-    font-size: 0.5rem;
+    font-size: 0.65rem;
     line-height: 1.0rem;
     letter-spacing: 0.2rem;
     color: $white;
@@ -82,16 +75,95 @@ main {
 
   .buttons-container {
     .button {
-      border: 2.5px solid $white;
+      border: 2.5px solid rgba(255, 255, 255, 0.3);
     }
   }
 }
+
+.intro-social {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-end;
+
+  .intro-social-item {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: $black;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400px;
+    line-height: 28px;
+
+    a {
+      color: $white;
+    }
+
+    a:hover {
+      color: $yellow;
+    }
+
+    a:visited {
+      color: $grey
+    }
+  }
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  // border: 2.5px solid $black;
+  height: 3.375rem;
+  width: 15.625rem;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  // margin: 0px 10px;
+}
+
+.btn-black {
+  background-color: $black;
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  a:hover {
+    color: $yellow;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+
+  a:hover {
+    color: $yellow;
+  }
+}
+
 
 // Mobile-first responsive rulesets
 
 @media only screen and (min-width:400px) {
   .intro h1 {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
 
   .intro h5 {
@@ -99,11 +171,11 @@ main {
   }
 
   .intro h6 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:576px) {
   .intro h1 {
     font-size: 3.2rem;
     line-height: 0.25;
@@ -114,7 +186,7 @@ main {
   }
 
   .intro h6 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -130,7 +202,7 @@ main {
   }
 
   .intro h6 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 2.5rem;
     letter-spacing: 0.2rem;
   }
