@@ -10570,6 +10570,7 @@ html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #151515;
+  width: 100%;
 }
 
 main .intro {
@@ -10589,7 +10590,7 @@ main .intro {
 
 main .about {
   background-color: #FFF;
-  height: 100vh;
+  height: auto;
 }
 
 main .experience {
@@ -10653,14 +10654,10 @@ main footer {
 }
 
 .intro-social .intro-social-item {
-  padding: 5px;
-  width: 50px;
-  height: 50px;
-  background-color: #151515;
+  padding: 0.5rem;
+  height: 3rem;
   text-align: center;
-  font-size: 23px;
-  font-weight: 400px;
-  line-height: 28px;
+  font-size: 1.3rem;
 }
 
 .intro-social .intro-social-item a {
@@ -10732,6 +10729,110 @@ main footer {
   color: #FFF3B0;
 }
 
+.about {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about .section-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  text-rendering: optimizeLegibility;
+}
+
+.about .section-intro h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.about .section-intro h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: #CF5C36;
+}
+
+.about .section-intro p {
+  font-family: "lora", serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #909090;
+  padding: 0 1rem;
+}
+
+.about .section-intro .image-cropper {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  float: none;
+}
+
+.about .section-intro .image-cropper .profile-pic {
+  margin-left: -2.75rem;
+  height: 10rem;
+  width: auto;
+}
+
+.about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-rendering: optimizeLegibility;
+}
+
+.about .about-content h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: #151515;
+}
+
+.about .about-content p {
+  text-align: start;
+  font-family: "lora", serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #909090;
+  padding: 0 1rem;
+}
+
+.about .about-content .image-cropper {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  float: none;
+}
+
+.about .about-content .image-cropper .profile-pic {
+  margin-left: -2.75rem;
+  height: 10rem;
+  width: auto;
+}
+
 @media (min-width: 576px) {
   .intro h1 {
     font-size: 3.2rem;
@@ -10742,6 +10843,9 @@ main footer {
   }
   .intro h6 {
     font-size: 0.8rem;
+  }
+  .intro-social .intro-social-item {
+    font-size: 1.5rem;
   }
 }
 
@@ -10758,6 +10862,9 @@ main footer {
     font-size: 0.9rem;
     line-height: 2.5rem;
     letter-spacing: 0.2rem;
+  }
+  .intro-social .intro-social-item {
+    font-size: 1.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
