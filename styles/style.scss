@@ -11,7 +11,7 @@
 html, body {
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
-  background-color: $main-black;
+  background-color: none;
   width: 100%;
 }
 
@@ -252,13 +252,15 @@ main {
 
     .progress-bar-container {
       padding: 1rem 0;
+
       h5 {
         @extend h5;
         color: $main-black;
       }
 
       .progress {
-        height: 0.3rem;
+        height: 0.4rem;
+        min-height: 0.4rem;
 
         .progress-bar {
           background-color: $main-black;
@@ -321,6 +323,19 @@ main {
       font-size: 1.5rem;
     }
   }
+
+  .about {
+    h1 {
+      font-size: 1.4rem;
+    }
+    .section-intro p {
+      margin: 2rem 0;
+    }
+
+    .section-intro .image-cropper {
+      float: left;
+    }
+  }
 }
 
 @include media-breakpoint-up(md)  {
@@ -343,6 +358,52 @@ main {
   .intro-social {
     .intro-social-item {
       font-size: 1.7rem;
+    }
+  }
+
+  .about {
+    h1 {
+      font-size: 1.6rem;
+    }
+    .section-intro p {
+      margin: 2rem 0.25rem;
+    }
+
+    .buttons-container {
+      .button {
+        max-width: 20rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg)  {
+  .about {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .section-intro p {
+      margin: 3rem 0.25rem;
+    }
+
+    .buttons-container {
+      .button {
+        max-width: 25rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl)  {
+  .about {
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .section-intro p {
+      margin: 4rem 0.25rem;
     }
   }
 }

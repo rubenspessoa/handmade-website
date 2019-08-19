@@ -10569,7 +10569,7 @@ html, body {
   font-family: "poppins", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #151515;
+  background-color: none;
   width: 100%;
 }
 
@@ -10844,7 +10844,8 @@ main footer {
 }
 
 .about .about-content-skills .progress-bar-container .progress {
-  height: 0.3rem;
+  height: 0.4rem;
+  min-height: 0.4rem;
 }
 
 .about .about-content-skills .progress-bar-container .progress .progress-bar {
@@ -10897,6 +10898,15 @@ main footer {
   .intro-social .intro-social-item {
     font-size: 1.5rem;
   }
+  .about h1 {
+    font-size: 1.4rem;
+  }
+  .about .section-intro p {
+    margin: 2rem 0;
+  }
+  .about .section-intro .image-cropper {
+    float: left;
+  }
 }
 
 @media (min-width: 768px) {
@@ -10915,6 +10925,36 @@ main footer {
   }
   .intro-social .intro-social-item {
     font-size: 1.7rem;
+  }
+  .about h1 {
+    font-size: 1.6rem;
+  }
+  .about .section-intro p {
+    margin: 2rem 0.25rem;
+  }
+  .about .buttons-container .button {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about h1 {
+    font-size: 1.8rem;
+  }
+  .about .section-intro p {
+    margin: 3rem 0.25rem;
+  }
+  .about .buttons-container .button {
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about h1 {
+    font-size: 2rem;
+  }
+  .about .section-intro p {
+    margin: 4rem 0.25rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
