@@ -79,7 +79,7 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, .about .about-content-skills .progress-bar-container h5, h6 {
+h1, h2, h3, h4, h5, .about .about-content-skills .progress-bar-container h5, .contact h6, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -365,7 +365,7 @@ template {
   display: none !important;
 }
 
-h1, h2, h3, h4, h5, .about .about-content-skills .progress-bar-container h5, h6,
+h1, h2, h3, h4, h5, .about .about-content-skills .progress-bar-container h5, .contact h6, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -388,7 +388,7 @@ h4, .h4 {
   font-size: 1.5rem;
 }
 
-h5, .about .about-content-skills .progress-bar-container h5, .h5 {
+h5, .about .about-content-skills .progress-bar-container h5, .contact h6, .h5 {
   font-size: 1.25rem;
 }
 
@@ -10571,6 +10571,7 @@ html, body {
           box-sizing: border-box;
   background-color: none;
   width: 100%;
+  height: auto;
 }
 
 main .intro {
@@ -10598,9 +10599,14 @@ main .experience {
   height: 100vh;
 }
 
+main .contact {
+  background-color: #151515;
+  height: auto;
+}
+
 main footer {
   background-color: #151515;
-  height: 50vh;
+  height: auto;
 }
 
 .intro-heading {
@@ -10608,7 +10614,7 @@ main footer {
   text-rendering: optimizeLegibility;
 }
 
-.intro-heading h5, .intro-heading .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro-heading h5, .intro-heading h6 {
+.intro-heading h5, .intro-heading .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro-heading h5, .intro-heading .contact h6, .contact .intro-heading h6, .intro-heading h6 {
   text-transform: uppercase;
   margin: 1.5rem;
 }
@@ -10621,7 +10627,7 @@ main footer {
   color: #FFF;
 }
 
-.intro-heading h5, .intro-heading .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro-heading h5 {
+.intro-heading h5, .intro-heading .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro-heading h5, .intro-heading .contact h6, .contact .intro-heading h6 {
   font-weight: bold;
   font-size: 0.9rem;
   letter-spacing: .2rem;
@@ -10729,23 +10735,19 @@ main footer {
   color: #FFF3B0;
 }
 
-.about {
-  padding: 4rem 2rem;
-}
-
-.about p, .about .about-content p, .about .about-content-profile p, .about .about-content-skills p {
+p, .about .about-content p, .about .about-content-profile p, .about .about-content-skills p {
   font-family: "lora", serif;
   font-weight: lighter;
   font-size: 1rem;
   color: #909090;
 }
 
-.about h1 {
+h1 {
   font-size: 1.3rem;
   font-weight: 600;
 }
 
-.about h3 {
+h3 {
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
@@ -10754,7 +10756,7 @@ main footer {
   color: #151515;
 }
 
-.about h4 {
+h4 {
   text-align: justify;
   font-size: 0.9rem;
   font-weight: 600;
@@ -10763,12 +10765,16 @@ main footer {
   color: #151515;
 }
 
-.about h5, .about .about-content-skills .progress-bar-container h5 {
+h5, .about .about-content-skills .progress-bar-container h5, .contact h6 {
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   color: #CF5C36;
+}
+
+.about {
+  padding: 4rem 2rem;
 }
 
 .about .section-intro {
@@ -10839,7 +10845,7 @@ main footer {
   padding: 1rem 0;
 }
 
-.about .about-content-skills .progress-bar-container h5 {
+.about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .contact h6, .contact .about .about-content-skills .progress-bar-container h6 {
   color: #151515;
 }
 
@@ -10884,12 +10890,106 @@ main footer {
   color: black;
 }
 
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact h1 {
+  color: #313131;
+}
+
+.contact h6 {
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+
+.contact p, .contact .about .about-content p, .about .about-content .contact p, .contact .about .about-content-profile p, .about .about-content-profile .contact p, .contact .about .about-content-skills p, .about .about-content-skills .contact p {
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #909090;
+}
+
+.contact .icon-container {
+  padding: 1rem 0;
+  color: #FFF;
+}
+
+.contact .icon-container i {
+  font-size: 2.5rem;
+}
+
+footer .footer-social {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  left: 0;
+  right: 0;
+  margin: 1rem auto;
+}
+
+footer .footer-social .footer-social-item {
+  padding: 0.5rem 1rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+footer .footer-social .footer-social-item a {
+  color: #FFF;
+}
+
+footer .footer-social .footer-social-item a:hover {
+  color: #FFF3B0;
+}
+
+footer .footer-social .footer-social-item a:visited {
+  color: #EBEBEB;
+}
+
+footer .footer-copyright {
+  font-size: 0.8rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #909090;
+  margin-bottom: 1rem;
+}
+
+footer .footer-copyright .footer-copyright-item {
+  min-width: 10rem;
+}
+
+footer .footer-copyright a {
+  color: #FFF;
+}
+
 @media (min-width: 576px) {
   .intro h1 {
     font-size: 3.2rem;
     line-height: 0.25;
   }
-  .intro h5, .intro .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro h5 {
+  .intro h5, .intro .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro h5, .intro .contact h6, .contact .intro h6 {
     font-size: 1.125rem;
   }
   .intro h6 {
@@ -10914,7 +11014,7 @@ main footer {
     font-size: 4.5rem;
     line-height: 0.3;
   }
-  .intro h5, .intro .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro h5 {
+  .intro h5, .intro .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro h5, .intro .contact h6, .contact .intro h6 {
     font-size: 1.25rem;
     letter-spacing: .2rem;
   }
@@ -10934,6 +11034,22 @@ main footer {
   }
   .about .buttons-container .button {
     max-width: 20rem;
+  }
+  .about .about-content-skills {
+    padding-top: 0;
+  }
+  footer .footer-copyright {
+    margin: 1rem auto;
+  }
+  footer .footer-copyright {
+    height: 3rem;
+  }
+  footer .footer-copyright .footer-copyright-item {
+    min-width: 10rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto 0;
   }
 }
 

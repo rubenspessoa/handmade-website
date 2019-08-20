@@ -13,6 +13,7 @@ html, body {
   box-sizing: border-box;
   background-color: none;
   width: 100%;
+  height: auto;
 }
 
 main {
@@ -34,9 +35,14 @@ main {
     height: 100vh;
   }
 
+  .contact {
+    background-color: $main-black;
+    height: auto;
+  }
+
   footer {
     background-color: $main-black;
-    height: 50vh;
+    height: auto;
   }
 }
 
@@ -153,47 +159,47 @@ main {
   }
 }
 
+p {
+  font-family: "lora", serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: $main-dark-gray;
+}
+
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: $main-black;
+}
+
+h4 {
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: $main-black;
+}
+
+h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: $main-orange;
+}
+
 .about {
   padding: 4rem 2rem;
-
-  p {
-    font-family: "lora", serif;
-    font-weight: lighter;
-    font-size: 1rem;
-    color: $main-dark-gray;
-  }
-
-
-  h1 {
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-
-  h3 {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    color: $main-black;
-  }
-
-  h4 {
-    text-align: justify;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    color: $main-black;
-  }
-
-  h5 {
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    color: $main-orange;
-  }
 
   .section-intro {
     display: flex;
@@ -302,6 +308,89 @@ main {
   }
 }
 
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h1 {
+    color: $main-darker-gray;
+  }
+
+  h6 {
+    @extend h5;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+  }
+
+  p {
+    font-family: "poppins", sans-serif;
+    font-size: 0.9rem;
+    color: $main-dark-gray;
+  }
+
+  .icon-container {
+    padding: 1rem 0;
+    color: $main-white;
+
+    i {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+footer {
+  .footer-social {
+    justify-content: center;
+    align-content: center;
+    height: fit-content;
+    width: max-content;
+    left: 0;
+    right: 0;
+    margin: 1rem auto;
+
+    .footer-social-item {
+      padding: 0.5rem 1rem;
+      height: 3rem;
+      text-align: center;
+      font-size: 1.3rem;
+
+      a {
+        color: $main-white;
+      }
+
+      a:hover {
+        color: $main-yellow;
+      }
+
+      a:visited {
+        color: $main-gray
+      }
+    }
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: fit-content;
+    width: max-content;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: $main-dark-gray;
+    margin-bottom: 1rem;
+
+    .footer-copyright-item {
+      min-width: 10rem;
+    }
+
+    a {
+      color: $main-white;
+    }
+  }
+}
+
 // Responsive rulesets
 
 @include media-breakpoint-up(sm) {
@@ -372,6 +461,26 @@ main {
     .buttons-container {
       .button {
         max-width: 20rem;
+      }
+    }
+
+    .about-content-skills {
+      padding-top: 0;
+    }
+  }
+
+  footer {
+    .footer-copyright {
+      margin: 1rem auto;
+    }
+
+    .footer-copyright {
+      height: 3rem;
+
+      .footer-copyright-item {
+        min-width: 10rem;
+        height: fit-content;
+        margin: auto 0;
       }
     }
   }
