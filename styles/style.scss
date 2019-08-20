@@ -32,7 +32,7 @@ main {
 
   .experience {
     background-color: $main-gray;
-    height: 100vh;
+    height: auto;
   }
 
   .contact {
@@ -308,12 +308,67 @@ h5 {
   }
 }
 
+.experience {
+  padding: 4rem 0 5rem 0;
+  text-align: center;
+
+  .timeline-wrapper {
+    h2 {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: $main-orange;
+      padding: 2rem 0;
+    }
+
+    .timeline-block {
+      padding: 1rem 0;
+      text-align: start;
+
+      h3 {
+        font-size: 1.1rem;
+        text-transform: initial;
+        letter-spacing: 0.1rem;
+        text-align: start;
+      }
+
+      h4 {
+        font-size: 1.0rem;
+        text-align: center;
+        font-weight: normal;
+        letter-spacing: 0.1rem;
+        text-transform: initial;
+        color: $main-black;
+        text-align: start;
+      }
+
+      h5 {
+        font-size: 0.7rem;
+        text-align: center;
+        font-weight: normal;
+        letter-spacing: 0.05rem;
+        text-transform: initial;
+        color: $main-darker-gray;
+        text-align: start;
+      }
+
+      .timeline-content {
+        a {
+          color: $main-black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
 .contact {
-  padding: 4rem 2rem;
+  padding-top: 4rem;
   text-align: center;
 
   h1 {
     color: $main-darker-gray;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
   }
 
   h6 {
@@ -339,6 +394,9 @@ h5 {
 }
 
 footer {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+
   .footer-social {
     justify-content: center;
     align-content: center;
@@ -379,7 +437,6 @@ footer {
     right: 0;
     margin: 0 auto;
     color: $main-dark-gray;
-    margin-bottom: 1rem;
 
     .footer-copyright-item {
       min-width: 10rem;
@@ -394,6 +451,23 @@ footer {
 // Responsive rulesets
 
 @include media-breakpoint-up(sm) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
   .intro h1 {
     font-size: 3.2rem;
     line-height: 0.25;
@@ -428,6 +502,14 @@ footer {
 }
 
 @include media-breakpoint-up(md)  {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
   .intro h1 {
     font-size: 4.5rem;
     line-height: 0.3;
@@ -487,6 +569,14 @@ footer {
 }
 
 @include media-breakpoint-up(lg)  {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+
   .about {
     h1 {
       font-size: 1.8rem;
@@ -499,6 +589,16 @@ footer {
     .buttons-container {
       .button {
         max-width: 25rem;
+      }
+    }
+  }
+
+  footer {
+    .footer-copyright {
+      .footer-copyright-item {
+        min-width: 15rem;
+        height: fit-content;
+        margin: auto 0;
       }
     }
   }
