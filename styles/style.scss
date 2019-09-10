@@ -2,11 +2,9 @@
 @import "_constants.scss";
 
 // Externals
-@import url("normalize.css");
-@import url("micons/micons.css");
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import url('https://fonts.googleapis.com/css?family=Lora:200,400,400i,700,700i|Poppins:300,400,600,700');
-@import url("font-awesome/css/font-awesome.min.css");
-@import "~/../../node_modules/bootstrap/scss/bootstrap.scss";
 
 html, body {
   font-family: "poppins", sans-serif;
@@ -163,7 +161,7 @@ p {
   font-family: "lora", serif;
   font-weight: lighter;
   font-size: 1rem;
-  color: $main-dark-gray;
+  color: $main-darker-gray;
 }
 
 
@@ -195,7 +193,7 @@ h5 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  color: $main-orange;
+  color: $main-blue;
 }
 
 .about {
@@ -316,7 +314,7 @@ h5 {
     h2 {
       font-weight: bold;
       font-size: 1.3rem;
-      color: $main-orange;
+      color: $main-blue;
       padding: 2rem 0;
     }
 
@@ -366,13 +364,19 @@ h5 {
   text-align: center;
 
   h1 {
-    color: $main-darker-gray;
+    color: $main-white;
     text-transform: capitalize;
     padding-bottom: 1rem;
   }
 
+  h5 {
+    @extend h5;
+    color: $main-yellow;
+  }
+
   h6 {
     @extend h5;
+    color: $main-yellow;
     font-size: 0.8rem;
     padding-top: 1rem;
   }
@@ -380,7 +384,7 @@ h5 {
   p {
     font-family: "poppins", sans-serif;
     font-size: 0.9rem;
-    color: $main-dark-gray;
+    color: $main-gray;
   }
 
   .icon-container {
