@@ -6,7 +6,8 @@
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import url('https://fonts.googleapis.com/css?family=Lora:200,400,400i,700,700i|Poppins:300,400,600,700');
 
-html, body {
+html,
+body {
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
   background-color: none;
@@ -48,7 +49,8 @@ main {
   text-align: center;
   text-rendering: optimizeLegibility;
 
-  h5, h6 {
+  h5,
+  h6 {
     text-transform: uppercase;
     margin: 1.5rem;
   }
@@ -90,7 +92,7 @@ main {
   width: 18rem;
   left: 0;
   right: 0;
-  bottom: 2rem;
+  bottom: 1rem;
   margin: 0 auto;
 
   .intro-social-item {
@@ -495,6 +497,7 @@ footer {
     h1 {
       font-size: 1.4rem;
     }
+
     .section-intro p {
       margin: 2rem 0;
     }
@@ -505,7 +508,7 @@ footer {
   }
 }
 
-@include media-breakpoint-up(md)  {
+@include media-breakpoint-up(md) {
   h1 {
     font-size: 1.6rem;
   }
@@ -540,6 +543,7 @@ footer {
     h1 {
       font-size: 1.6rem;
     }
+
     .section-intro p {
       margin: 2rem 0.25rem;
     }
@@ -572,11 +576,11 @@ footer {
   }
 }
 
-@include media-breakpoint-up(lg)  {
+@include media-breakpoint-up(lg) {
   h1 {
     font-size: 1.8rem;
   }
-  
+
   h3 {
     font-size: 1.5rem;
   }
@@ -608,7 +612,7 @@ footer {
   }
 }
 
-@include media-breakpoint-up(xl)  {
+@include media-breakpoint-up(xl) {
   .about {
 
     h1 {
