@@ -16883,14 +16883,14 @@ footer .footer-copyright a {
   h5, .about .about-content-skills .progress-bar-container h5, .contact h5, .contact h6 {
     font-size: 1rem;
   }
-  .intro h1 {
+  .intro-wrapper h1 {
     font-size: 3.2rem;
     line-height: 0.25;
   }
-  .intro h5, .intro .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro h5, .intro .contact h6, .contact .intro h6 {
+  .intrintro-wrappero h5, .intrintro-wrappero .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intrintro-wrappero h5, .intrintro-wrappero .contact h6, .contact .intrintro-wrappero h6 {
     font-size: 1.125rem;
   }
-  .intro h6 {
+  .intro-wrapper h6 {
     font-size: 0.8rem;
   }
   .intro-social .intro-social-item {
@@ -16914,15 +16914,15 @@ footer .footer-copyright a {
   h3 {
     font-size: 1.3rem;
   }
-  .intro h1 {
+  .intro-wrapper h1 {
     font-size: 4.5rem;
     line-height: 0.3;
   }
-  .intro h5, .intro .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro h5, .intro .contact h6, .contact .intro h6 {
+  .intro-wrapper h5, .intro-wrapper .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro-wrapper h5, .intro-wrapper .contact h6, .contact .intro-wrapper h6 {
     font-size: 1.25rem;
     letter-spacing: .2rem;
   }
-  .intro h6 {
+  .intro-wrapper h6 {
     font-size: 0.9rem;
     line-height: 2.5rem;
     letter-spacing: 0.2rem;
