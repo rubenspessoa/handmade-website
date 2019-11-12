@@ -6,6 +6,46 @@
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import url('https://fonts.googleapis.com/css?family=Lora:200,400,400i,700,700i|Poppins:300,400,600,700');
 
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
 html,
 body {
   font-family: "poppins", sans-serif;
@@ -16,8 +56,22 @@ body {
 }
 
 main {
-  .intro {
-    background-color: $main-black;
+  .stars {
+    background: #000 url(../images/stars.png) repeat top center;
+    z-index: 0;
+  }
+
+  .twinkling {
+    background: transparent url(../images/twinkling.png) repeat top center;
+    z-index: 1;
+    -moz-animation: move-twink-back 800s linear infinite;
+    -ms-animation: move-twink-back 800s linear infinite;
+    -o-animation: move-twink-back 800s linear infinite;
+    -webkit-animation: move-twink-back 800s linear infinite;
+    animation: move-twink-back 800s linear infinite;
+  }
+
+  .intro-wrapper {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -34,8 +88,11 @@ main {
     height: auto;
   }
 
-  .contact {
-    background-color: $main-black;
+  .contact-wrapper {
+    height: auto;
+  }
+
+  .footer-wrapper {
     height: auto;
   }
 
