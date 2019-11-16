@@ -419,13 +419,13 @@ h5 {
 }
 
 .contact {
-  padding-top: 4rem;
+  padding-top: 1rem;
   text-align: center;
 
   h1 {
     color: $main-white;
     text-transform: capitalize;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
   }
 
   h5 {
@@ -457,8 +457,8 @@ h5 {
 }
 
 footer {
-  padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
 
   .footer-social {
     justify-content: center;
