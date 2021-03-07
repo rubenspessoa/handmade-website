@@ -16478,7 +16478,7 @@ main footer {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 18rem;
+  width: 9rem;
   left: 0;
   right: 0;
   bottom: 1rem;
@@ -16916,7 +16916,7 @@ footer .footer-copyright a {
   }
   .intro-wrapper h1 {
     font-size: 4.5rem;
-    line-height: 0.3;
+    line-height: 0.9;
   }
   .intro-wrapper h5, .intro-wrapper .about .about-content-skills .progress-bar-container h5, .about .about-content-skills .progress-bar-container .intro-wrapper h5, .intro-wrapper .contact h6, .contact .intro-wrapper h6 {
     font-size: 1.25rem;
