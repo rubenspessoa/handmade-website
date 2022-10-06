@@ -16629,9 +16629,8 @@ h5, .about .about-content-skills .progress-bar-container h5, .contact h5, .conta
 }
 
 .about .section-intro .image-cropper .profile-pic {
-  margin-left: -2.75rem;
-  height: 10rem;
-  width: auto;
+  margin-top: -2rem;
+  width: 100%;
 }
 
 .about .about-content {
